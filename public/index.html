@@ -12,6 +12,9 @@
 <body>
     <nav class="navbar navbar-dark bg-dark mb-5">
         <span class="navbar-brand mb-0 h1">Lista de recados - ES6</span>
+        <button class="btn btn-outline-success ml-auto" type="submit" id="btn_EfetuarCadastro">Cadastro</button>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btn_Efetuarlogin">login</button>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btn_EfetuarLogoff">Sair</button>
     </nav>
 
     <div class="container">
@@ -60,9 +63,108 @@
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
               <button type="button" class="btn btn-primary" id="btn_edit">Enviar</button>
             </div>
+            
           </div>
         </div>
+    </div>
+
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Loguin de Usuário <label id="label-id" class="modal-title"></label></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Email:</label>
+                <input type="text" class="form-control" id="email-login">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Senha:</label>
+                <input type="password" class="form-control" id="password-login">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary" id="btn_login">Logar</button>
+          </div>
+          
+        </div>
       </div>
+    </div>
+
+    <div class="modal fade" id="modalCadastro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cadastro de Usuário <label id="label-id" class="modal-title"></label></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Nome:</label>
+                <input type="text" class="form-control" id="name-cadastro">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Email:</label>
+                <input type="text" class="form-control" id="email-cadastro">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Senha:</label>
+                <input type="password" class="form-control" id="password-cadastro">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary" id="btn_cadastro">Cadastrar</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalEditCadastro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Editar Cadastro de Usuário <label id="label-id" class="modal-title"></label></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Email:</label>
+                <input type="text" class="form-control" id="email-EditCadastro">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Senha Atual:</label>
+                <input type="password" class="form-control" id="oldpassword-EditCadastro">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label"> Nova Senha:</label>
+                <input type="password" class="form-control" id="password-EditCadastro">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary" id="btn_EditCadastro">Salvar</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
 
     <script src="./bundle.js"></script>
 </body>
