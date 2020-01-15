@@ -25,8 +25,8 @@ class App {
 
         this.title = document.getElementById("input_title");
         this.content = document.getElementById("input_content");
-        //this.url = 'https://cards-with-login-and-auth.herokuapp.com';
-        this.url = 'http://localhost:3333';
+        this.url = 'https://cards-with-login-and-auth.herokuapp.com';
+        //this.url = 'http://localhost:3333';
         this.getScraps(this);
         //this.getLogin(this);
         this.registerEvents();
